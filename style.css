@@ -1,0 +1,575 @@
+
+/* star eller * er vores selector*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+}
+
+/*setting font*/
+
+nav{
+  font-family:  'Bodoni Moda', serif;
+  font-family: 'DM Serif Display', serif;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Libre Bodoni', serif;
+
+}
+
+.logo{
+
+    height: 30px;
+}
+
+footer {
+    position: fixed;
+}
+
+
+/*Styling af body*/
+body{
+
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Libre Bodoni', serif;
+    background-color: beige;   
+}
+
+
+/*Styling nav*/
+
+nav{
+
+/*Højden på navbaren*/
+    height: 60px;
+/*Width er hvor langt hen på hele siden farven/navbare fylder*/
+    width: 100%;
+/*Farven på navbaren*/
+background-color: #f8c2f7; 
+}
+
+
+/*Placering af tekst i navbar*/
+
+nav ul{
+    /*Hvor teksten skal stå*/
+    float: right;
+    margin-left: 20px;
+}
+
+/*Styling af logo i nav*/
+
+
+
+/*Styling navbar li*/
+nav ul li{
+    display: inline-block;
+ /*Hvor højt eller lav tektsen skal sidde inde i navbaren*/
+    line-height: 60px;
+margin: 0 5px;
+
+}
+
+
+
+/*Styling af link inde i navbar*/
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    /*nummer to tal afgør hvor langt mellemrum imellem punkterne skal være*/
+    padding: 7px 50px;
+}
+
+
+/* Styling aktivt link*/
+a:active,
+a:hover {
+background-color: #f2bfe3;
+transition: 0.5s;
+}
+
+ 
+/*CSS reset til forskellige broweseren så det ikke ser anderledes ud*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*box-sizing: border-box' at padding og margin bliver inde for den box (ramme om txt) */
+    }
+
+    
+/*Styling af footer*/
+    .footer{
+        padding: 20px;
+        background-color: #fec3fb
+    
+    }
+
+/*Man kan style to forskellige class'er ved at bruge punktum og seperere med komma*/
+    .footer, .social {
+        text-align: center;
+        padding: 10px;
+        color: #f9aa3d;
+    }
+    
+
+/* Styler mit anchor tag inde i class'en 'social'*/
+    .social a {
+    font-size: 35px;
+    /*Inherit gør at color property bliver den samme farve som den container - idette tilfælde .social (color: #4b4c4d
+    ;*/
+    /*Her laver jeg en ramme rundt om mine ikoner*/
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    /*Border-radius gør rammerne runde*/
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    }
+    
+  
+    
+    /*Dette step får ikonerne til at bliver mørkere når musen 'hover' over ikonerne*/
+    .social a:hover {
+        opacity: 0.9;
+    }
+    /* for at finde vores ul og style den, vælger vi først vores footer og finder vores unordered list*/
+    .footer ul{
+    margin-top: 0;
+    padding: 0;
+    /*list style none fjerner de ul-sorte punkter*/
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    
+    }
+    
+    /*Her tager jeg fat i li under ul i min footer*/
+    .footer ul li{
+        display: inline-block;
+    }
+
+    /*Her tager jeg fat i vores anchor tags 'li' under ul som er i vores footer*/
+    .footer ul li a{
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    
+    }
+    
+    .footer ul li a:hover{
+        opacity: 1;
+    }
+    
+    .footer, .copyright{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 13px;
+        color: #aaa;
+        
+    }
+    
+    /*For at skubbe footeren ned i bunden (kan også være 'absolute' istedet for fixed, )*/
+    footer.footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+
+
+
+/*FORSIDE.html*/
+
+
+.h1 {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+   font-size: 30px;
+}
+
+.h2{
+    font-size: 40px;
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Libre Bodoni', serif;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Monoton', sans-serif;
+    color: crimson;
+}
+
+.float-container{
+
+    padding: 30px;
+
+}
+
+.float-child1 {
+    margin-left: 100px;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid white ;
+    height: 200px;
+    background-color: white;
+    border-radius: 17px;
+
+}  
+
+
+.float-child2 {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height: 350px;
+    width:350px;
+}  
+
+
+.float-container2{
+    padding: 20px;
+}
+
+.float-child3{
+    margin-left: 100px;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height: 200px;
+    background-color: white;
+    border-radius: 17px;
+
+
+}
+
+.float-child4{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height: 400px;
+    width:350px;
+    margin-top: 0;
+}
+
+.float-container, .float-container2{
+    align-items: center;
+}
+
+
+
+ /*INDKØB.HTML*/
+
+    .indkoebh1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img_1{
+    max-width: 170px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 15px;
+    height: 270px;
+}
+
+
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+
+}
+
+.text-box{
+font-size: 16px;
+background: white;
+padding: 50px;
+border-radius: 17px;
+
+}
+
+/*Nummer to artiekl kasse*/
+
+.img_2{
+    max-width: 320px;
+    float: right;
+    border-radius: 17px;
+    margin-right: 15px;
+    height: 200px;
+ 
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: beige;
+}
+
+.wrapper2{
+    margin: 150px auto;
+    width: 70%;
+
+}
+
+.text-box2{
+font-size: 16px;
+background: white;
+padding: 50px;
+border-radius: 17px;
+
+}
+
+
+.dumpling-link{
+    color: #f9aa3d;
+    font-weight: bold;
+    margin-left: 300px;
+   
+}
+
+.dumpling-link2{
+
+    color: #f9aa3d;
+    font-weight: bold;
+    margin-left: 400px;
+}
+/*INDKØB - search city box*/
+
+
+
+
+
+
+
+
+
+
+/*IMG gallery*/
+
+h1{
+    font-weight: bold;
+    color: #f9aa3d;
+    text-align: center;
+    padding: 30px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Justerer efter dine behov */
+    grid-gap: 10px; /* Tilføjer mellemrum mellem billederne */
+    justify-content: center; /* Centrerer inden for containeren */
+    
+}
+
+.image-container img {
+    max-width: 100%; /* Sørger for, at billedet ikke overstiger containerens bredde */
+    max-height: 100%; /* Sørger for, at billedet ikke overstiger containerens højde */
+}
+/*Ved at bruge CSS Grid på containeren og justify-content: center centrerer jeg billederne både vandret og lodret inden for containeren.*/
+
+/*OPSKRIFTER.HTML*/
+
+.recipe-ingredients-inner, .procedure-list{
+    border: 5px solid white;
+    background: white;
+    padding: 10px;
+    margin: 30px;
+    align-items: center;
+    border-radius: 17px;
+}
+
+.dumplingopskrift{
+    display: flex;
+}
+
+.recipe-wrapper{
+    margin-left: 300px;
+    width: 400px;
+
+}
+
+.procedure-list{
+    width: 500px;
+    padding: 40px;
+}
+
+.recipe-ingredients-inner{
+    width: 350px;
+    padding-left: 40px;
+}
+
+.dumpling{
+    height: 300px;
+    text-align: center;
+}
+
+.recipe-ingredients img{
+
+        display: block;
+        margin: 0 auto; /* Centrerer billedet vandret */
+      
+}
+
+.pande{
+    border-radius: 17px;
+    width: 350px;
+    border: 20px solid white;
+}
+
+.images{
+    border-radius: 14px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.image-container-tilbud{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Justerer efter dine behov */
+        grid-gap: 10px; /* Tilføjer mellemrum mellem billederne */
+        justify-content: center; /* Centrerer inden for containeren */
+           /*CSS Grid på containeren og justify-content: center centrerer jeg billederne både vandret og lodret inden for containeren.*/
+    }
+    
+
+
+
+/*Tekst før tilbudskasse*/
+
+h2{
+    color: #f9aa3d;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+section{
+    margin-left: 370px;
+    width: 20%;
+    float: left;
+    padding: 20px;
+    border: 2px solid white ;
+    height: 400px;
+    background-color: white;
+    border-radius: 17px;
+}
+
+
+
+
+/*Tilbudskasse*/
+
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    margin-left: 700px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  .image-tilbud {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+
+  /*TIPS OG TRICKS.HTML*/
+
+ .tips, .tips2, .madkasse{
+    display: flex;
+    margin-left: 300px;
+ }
+
+  .tip1, .tip2, .tip3, .tip4{
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+  }
+
+  .tip1{
+    border: 5px solid rgb(158, 219, 158);
+    height: 330px;
+    width: 300px;
+  }
+
+  .tip2{
+    border: 5px solid pink;
+    height: 280px;
+    width: 300px;
+  }
+
+  .tip3{
+    border: 5px solid rgb(152, 194, 231);
+    height: 400px;
+    width: 250px;
+  }
+ 
+  .tip4{
+    border: 5px solid rgb(237, 225, 140);
+    height: 250px;
+    width: 430px;
+  }
+
+  .madkasse{
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    background: white;
+    padding: 0px;
+    border-radius: 10px;
+    
+  }
+
+  .tipsh2{
+    font-size: 20px;
+   color: black;
+  }
+
+  .tt-boks{
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px;
+    margin-left: 450px;
+    margin-bottom: 200px;
+  }
+ 
+
+  /*Kommentarer til Murat*/
+  /*Kommentar 1:
+  Teksten i kasserne med tips og tricks ser normale ud ved mig, men da jeg åbnede den på en anden computer, så ryger noget teksten ned under kasserne - kan ikke opspore problemet*/
+
+  /*Kommentar 2:
+  Som nævnt i en mail, så havde jge problmer med at få footeren 'sat fast' nederst på siden, så noget af mit indhold blivet dækket af footeren*/
+
